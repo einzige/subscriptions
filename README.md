@@ -74,4 +74,4 @@ Finished in 0.02387s
 - Migrations?
 - `framework g migraiton create_users`
 - Migrate?
-- `rake db:migrate`
+- `rake db:migrate FRAMEWORK_ENV=test`
