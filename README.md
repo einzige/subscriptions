@@ -3,7 +3,7 @@
 Implement an app where users can subscribe to each other.
 
 ## Business process
-User creates an account in the system. From this moment user can subscribe and/or become a profile owner to let other users subscribe on their profile:
+User creates an account in the system. From this moment user can subscribe and/or become a profile owner to let other users subscribe on his profile:
 
 ### Profile owner flow
 - Any user can create a single public profile.
@@ -34,7 +34,7 @@ Petri net for this flow would roughly look like:
 - If user cancels subscription he still has an access to a profile until next billing period.
 - User can restore subscription. Will user be charged or not depends on date of the most recent payment made for the subscription.
 - If recurring payment fails (credit card declined, zero balance etc) subscriber looses access to the profile until charge succeeds.
-- When user updates their billing info system automatically performs attempt to pay for subscriptions with failed billing.  
+- When user updates their billing info system automatically performs attempt to pay for subscriptions with failed billing.
 - If user updates credit card details 5 times in a day, system automatically locks their account.
 - If user subscribes on 10 profiles in a day, system locks their account.
 - If user updates their credit card number and this credit card number is already in the system, it locks their account.
@@ -48,7 +48,7 @@ Any business action can't be performed by a user if their account marked as "ban
 
 ## Additional tasks
 
-- Calculate monthly churn and retention rates.
+- Calculate monthly churn and retention rates for subscribers.
 - Find profile recommendations to subscribe on for a subscriber.
 - Fetch a list of profile owners for payout (with payout amounts).
 - Fix issues in the task description.
