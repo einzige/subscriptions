@@ -33,7 +33,7 @@ Petri net for this flow would roughly look like:
 - Recurring payment must always happen in a next month.
 - If user cancels subscription he still has an access to a profile until next billing period.
 - User can restore subscription. Will user be charged or not depends on date of the most recent payment made for the subscription.
-- If recurring payment fails (credit card declined, zero balance etc) subscriber looses access to the profile until charge succeeds.
+- If recurring payment fails (credit card declined, zero balance etc) subscriber loses access to the profile until charge succeeds.
 - When user updates their billing info system automatically performs attempt to pay for subscriptions with failed billing.
 - If user updates credit card details 5 times in a day, system automatically locks their account.
 - If user subscribes on 10 profiles in a day, system locks their account.
