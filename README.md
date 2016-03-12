@@ -52,3 +52,26 @@ Any business action can't be performed by a user if their account marked as "ban
 - Find profile recommendations to subscribe on for a subscriber.
 - Fetch a list of profile owners for payout (with payout amounts).
 - Fix issues in the task description.
+
+## How to
+
+- Run `bundle install`
+- Edit `config/databases.yml`
+
+```
+vagrant:~/app$ rake db:create FRAMEWORK_ENV=test
+Loading test
+The database subscriptions_test has been successfully created
+vagrant:~/app$ rake test
+Started with run options --seed 52239
+
+  1/1: [===============================================================================================================================================================] 100% Time: 00:00:00, Time: 00:00:00
+
+Finished in 0.02387s
+1 tests, 1 assertions, 0 failures, 0 errors, 0 skips
+```
+
+- Migrations?
+- `framework g migraiton create_users`
+- Migrate?
+- `rake db:migrate`
